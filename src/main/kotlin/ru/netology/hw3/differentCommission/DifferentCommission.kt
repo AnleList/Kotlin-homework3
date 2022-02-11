@@ -1,8 +1,8 @@
 package ru.netology.hw3
 
 fun main() {
-    val transferAmount = 76_00 //в копейках
-    val cardAccountType = "Мир"
+    val transferAmount = 760_000_00 //в копейках
+    val cardAccountType = "visa"
     val amountOfPreviousTransfersThisMonth = 0
 
 
@@ -16,11 +16,11 @@ fun main() {
 }
 
 fun commissionCalculation(
-    CardAccountType: String,
+    cardAccountType: String,
     amountOfPreviousTransfersThisMonth: Int,
     transferAmount: Int
 ): Int {
-    return when (CardAccountType.trim().lowercase()) {
+    return when (cardAccountType.trim().lowercase()) {
         "vkpay" -> 0
         "mastercard", "maestro" ->
             if (transferAmount + amountOfPreviousTransfersThisMonth <= 75_000_00) 0
