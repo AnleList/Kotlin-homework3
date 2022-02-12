@@ -1,4 +1,4 @@
-package ru.netology.hw3
+package ru.netology.hw3.differentCommission
 
 fun main() {
     val transferAmount = 760_000_00 //в копейках

@@ -3,7 +3,6 @@ package ru.netology.hw3.differentCommission
 import org.junit.Test
 
 import org.junit.Assert.*
-import ru.netology.hw3.commissionCalculation
 
 class DifferentCommissionKtTest {
 
@@ -94,6 +93,6 @@ class DifferentCommissionKtTest {
             transferAmount = testTransferAmount
         )
 
-        assertEquals(3500, result)
+        assertEquals(0, result)
     }
 }

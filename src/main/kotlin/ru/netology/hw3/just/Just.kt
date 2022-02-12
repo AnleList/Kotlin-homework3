@@ -1,4 +1,4 @@
-package ru.netology.hw3
+package ru.netology.hw3.just
 
 fun main() {
     val secAgo = 588677
