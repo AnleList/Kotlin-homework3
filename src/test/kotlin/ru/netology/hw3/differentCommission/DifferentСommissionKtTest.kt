@@ -93,6 +93,6 @@ class DifferentCommissionKtTest {
             transferAmount = testTransferAmount
         )
 
-        assertEquals(0, result)
+        assertEquals(3500, result)
     }
 }
