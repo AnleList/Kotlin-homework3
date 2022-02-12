@@ -80,19 +80,4 @@ class DifferentCommissionKtTest {
 
         assertEquals(570000, result)
     }
-
-    @Test
-    fun testOfTest_by_default_commissionCalculation() {
-        val cardType = "vkpay"
-        val amountOfPreviousTransfers = 0
-        val testTransferAmount = 76_00
-
-        val result = commissionCalculation(
-            cardAccountType = cardType,
-            amountOfPreviousTransfersThisMonth = amountOfPreviousTransfers,
-            transferAmount = testTransferAmount
-        )
-
-        assertEquals(3500, result)
-    }
 }
